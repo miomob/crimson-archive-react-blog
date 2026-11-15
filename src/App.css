@@ -1,0 +1,334 @@
+
+header {
+  background: #151515;
+  color: #f0e9dc;
+  text-align: center;
+  padding: 50px 20px 30px;
+  border-bottom: 5px double #a39a8b;
+}
+
+header::before {
+  content: "✦  EST. MMXXVI  ✦";
+  display: block;
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: #bcb3a4;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0 0 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  border-top: 1px solid #77736d;
+  padding-top: 20px;
+}
+
+nav a {
+  color: #e2d9ca;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 45px auto;
+  padding: 35px;
+  background: #eee7d9;
+  border: 1px solid #77736d;
+  outline: 6px solid #242424;
+}
+
+.blog-post {
+  background: transparent;
+  padding: 25px 15px 40px;
+  margin-bottom: 35px;
+  border-bottom: 3px double #77736d;
+}
+
+.blog-post:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.blog-post::before {
+  content: "❦";
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: #77736d;
+  margin-bottom: 10px;
+}
+
+.blog-post h2 {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+.blog-post p {
+  color: #33312f;
+}
+
+.blog-post strong {
+  color: #171717;
+}
+
+.comments {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #a39a8b;
+}
+
+.comments h3,
+.comments h4 {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-weight: 400;
+}
+
+.comments textarea {
+  width: 100%;
+  min-height: 100px;
+  background: #f7f2e9;
+  color: #292929;
+  border: 1px solid #77736d;
+  border-radius: 0;
+  padding: 15px;
+  resize: vertical;
+}
+
+.comments textarea:focus {
+  outline: 2px solid #55514c;
+}
+
+.comments button {
+  display: block;
+  background: #252525;
+  color: #f0e9dc;
+  border: 1px solid #252525;
+  padding: 10px 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.comments button:hover {
+  background: #55514c;
+}
+
+.comments ul {
+  padding-left: 25px;
+}
+
+.comments li {
+  padding: 8px 0;
+  border-bottom: 1px dotted #bcb3a4;
+}
+
+footer {
+  background: #151515;
+  color: #c8c0b1;
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 3px double #77736d;
+  font-size: 17px;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 25px 15px;
+    padding: 15px;
+  }
+
+  .blog-post {
+    padding: 20px 5px;
+  }
+
+  .blog-post h2 {
+    font-size: 28px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+.info-section {
+  padding: 25px 15px;
+  margin-top: 30px;
+  border-top: 3px double #77736d;
+}
+
+.info-section h2 {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.info-section p {
+  color: #33312f;
+}
+
+
+/* Victorian-style forms */
+
+.comment-form,
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.comment-form label,
+.contact-form label {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 20px;
+  color: #292929;
+}
+
+.comment-form input,
+.comment-form textarea,
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  background: #f7f2e9;
+  color: #292929;
+  border: 1px solid #77736d;
+  border-radius: 0;
+  font-size: 18px;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #55514c;
+}
+
+.comment-form button,
+.contact-form button {
+  align-self: flex-start;
+  background: #252525;
+  color: #f0e9dc;
+  border: 1px solid #252525;
+  padding: 12px 28px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.comment-form button:hover,
+.contact-form button:hover {
+  background: #55514c;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #34312e;
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 19px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.read-more:hover {
+  color: #77736d;
+}
+
+
+/* Dark and Light Theme Toggle */
+
+.theme-toggle {
+  background: transparent;
+  color: #f0e9dc;
+  border: 1px solid #a39a8b;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.theme-toggle:hover {
+  background: #444;
+}
+
+/* Dark mode */
+
+[data-theme="dark"] body {
+  background: #080808;
+  color: #e8e1d5;
+}
+
+[data-theme="dark"] main {
+  background: #242424;
+  border-color: #77736d;
+}
+
+[data-theme="dark"] .blog-post,
+[data-theme="dark"] .blog-post p,
+[data-theme="dark"] .info-section p {
+  color: #e8e1d5;
+}
+
+[data-theme="dark"] .blog-post h2,
+[data-theme="dark"] .blog-post strong,
+[data-theme="dark"] .comments h3,
+[data-theme="dark"] .comments h4,
+[data-theme="dark"] .comment-form label,
+[data-theme="dark"] .contact-form label {
+  color: #f0e9dc;
+}
+
+[data-theme="dark"] .read-more {
+  color: #d0c4ae;
+}
+
+[data-theme="dark"] .comment-form input,
+[data-theme="dark"] .comment-form textarea,
+[data-theme="dark"] .contact-form input,
+[data-theme="dark"] .contact-form textarea,
+[data-theme="dark"] .comments textarea {
+  background: #161616;
+  color: #f0e9dc;
+  border-color: #77736d;
+}
+
+[data-theme="dark"] .comment-form button,
+[data-theme="dark"] .contact-form button,
+[data-theme="dark"] .comments button {
+  background: #d0c4ae;
+  color: #171717;
+}
+
+[data-theme="dark"] .comments li {
+  color: #e8e1d5;
+}
